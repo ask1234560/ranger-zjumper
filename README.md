@@ -12,6 +12,7 @@ This plugin integrates [Z](https://github.com/rupa/z/) with ranger. The plugin u
 
 * type `:z dirname` to go to dirname or `:z dirname1 dirname2` to go to dirname1/*/dirname2.
 * press c followed by z, followed by `dirname` or `dirname1 dirname2`.
+* dirname should be lowercase only.
 
 ## Configuration
 
