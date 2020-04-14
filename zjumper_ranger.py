@@ -11,7 +11,7 @@ class z(Command):
 
         # return directories satisfying the querry
         #  ~/.z file to be present in home, if file in different location change the below command at the end
-        cmd = """awk -F "|" -v q=\""""+" ".join(self.args[1:])+"""\" 'BEGIN{gsub(/ /, ".*", q)}  { if(tolower($1) ~ q){ print $1} }' < ~/.z"""
+        cmd = """awk -F "|" -v q=\""""+" ".join(self.args[1:])+"""\" 'BEGIN{gsub(/ /, ".*", q)}  { if(tolower($1) ~ q){ print $1} }'  ~/.z"""
 
 
         directories,error = subprocess.Popen(cmd, shell=True, executable="/bin/bash", stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()
@@ -19,10 +19,4 @@ class z(Command):
         directories = directories.rstrip('\n').split("\n")
 
         #  smallest directory will be the directory required
-        sl,os = len(directories[0]),directories[0]
-        for directory in directories[1:]:
-            l = len(directory)
-            if l < sl:
-                sl = l;
-                os = directory;
-        self.fm.execute_console("cd " + os)
+        self.fm.execute_console("cd " + min(directories))
