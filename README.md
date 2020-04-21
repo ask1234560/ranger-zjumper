@@ -1,6 +1,6 @@
 # Ranger & z
 
-This plugin integrates [Z](https://github.com/rupa/z/) with ranger. The plugin uses .z file to jump around.
+This plugin integrates [Z](https://github.com/rupa/z/) with ranger. The plugin uses .z file to jump around, watch [screencast](https://youtu.be/ciHHbFtz4N8).
 
 ## Installation
 
