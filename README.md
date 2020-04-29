@@ -1,6 +1,6 @@
 # Ranger & z
 
-This plugin integrates [Z](https://github.com/rupa/z/) with ranger. The plugin uses .z file to jump around, watch [screencast](https://youtu.be/ciHHbFtz4N8).
+This plugin integrates [Z](https://github.com/rupa/z/) with ranger. The plugin uses __.z__ file to jump around, watch [screencast](https://youtu.be/ciHHbFtz4N8).
 
 ## Installation
 
@@ -10,11 +10,11 @@ This plugin integrates [Z](https://github.com/rupa/z/) with ranger. The plugin u
 
 ## Usage
 
-* type `:z dirname` to go to dirname or `:z dirname1 dirname2` to go to dirname1/*/dirname2.
+* type `:z dirname` to go to dirname or `:z dirname1 dirname2` to go to `dirname1/*/dirname2`.
 * press c followed by z, followed by `dirname` or `dirname1 dirname2`.
 * dirname should be lowercase only.
 
 ## Configuration
 
-This plugin uses .z file in home directory, if .z in different location change  `cmd = """awk -F "|" -v q=\""""+" ".join(self.args[1:])+"""\" 'BEGIN{gsub(/ /, ".*", q)}  { if(tolower($1) ~ q){ print $1} }'  ~/.z"""` accordingly. 
+This plugin uses __.z__ file in home directory, if __.z__ in different location change  `cmd = """awk -F "|" -v q=\""""+" ".join(self.args[1:])+"""\" 'BEGIN{gsub(/ /, ".*", q)}  { if(tolower($1) ~ q){ print $1} }'  ~/.z"""` accordingly. 
 
