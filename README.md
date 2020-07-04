@@ -4,7 +4,7 @@ This plugin integrates [Z](https://github.com/rupa/z/) with [ranger](https://git
 
 ## Installation
 
-* Copy zjumper_ranger.py to ${XDG_CONFIG_HOME}/ranger/plugins aka ~/.config/ranger/plugins.
+* Copy `zjumper_ranger.py` to `${XDG_CONFIG_HOME}/ranger/plugins` aka `~/.config/ranger/plugins`.
 * Add  __`map cz console z%space`__ in .config/ranger/rc.conf
 
 
