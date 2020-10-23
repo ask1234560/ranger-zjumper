@@ -1,6 +1,6 @@
 # Ranger & z
 
-This plugin integrates [Z](https://github.com/rupa/z/) with [ranger](https://github.com/ranger/ranger). The plugin uses `.z` file to jump around, watch [screencast](https://youtu.be/ciHHbFtz4N8).
+This plugin integrates [Z](https://github.com/rupa/z) with [ranger](https://github.com/ranger/ranger). The plugin uses `.z` file to jump around, watch [screencast](https://youtu.be/ciHHbFtz4N8).
 
 ## Installation
 
@@ -16,5 +16,5 @@ This plugin integrates [Z](https://github.com/rupa/z/) with [ranger](https://git
 
 ## Configuration
 
-This plugin uses `.z` file, if `.z` in different location other than `~/.config/.z` change `z_loc = getenv("HOME")+"/.config/.z"` in `zjumper_ranger.py`. 
+This plugin uses `.z` file, if `.z` in different location other than `~/.z` change `z_loc = getenv("HOME")+"/.z"` in `zjumper_ranger.py`. 
 
