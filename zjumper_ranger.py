@@ -10,7 +10,7 @@ class z(Command):
     def execute(self):
 
         # location of .z file
-        z_loc = getenv("HOME")+"/.config/.z"
+        z_loc = getenv("HOME")+"/.z"
         with open(z_loc,"r") as fobj:
             flists = fobj.readlines()
 
