@@ -1,6 +1,7 @@
 import ranger.api
 from ranger.api.commands import *
 from os import getenv
+import re
 
 
 class z(Command):
@@ -15,10 +16,10 @@ class z(Command):
             flists = fobj.readlines()
 
         # user given directory
-        req = self.args[1]
+        req = re.compile(".*".join(self.args[1:]),re.IGNORECASE)
         directories = []
         for i in flists:
-            if req in i:
+            if req.search(i):
                 directories.append(i.split("|")[0])
 
         try:
