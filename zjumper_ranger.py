@@ -18,7 +18,7 @@ class z(Command):
         req = self.args[1]
         directories = []
         for i in flists:
-            if req in i:
+            if req.lower() in i.lower():
                 directories.append(i.split("|")[0])
 
         try:
