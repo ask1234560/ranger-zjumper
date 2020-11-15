@@ -15,11 +15,15 @@ class z(Command):
             flists = fobj.readlines()
 
         # user given directory
-        req = self.args[1]
+        req = self.args
         directories = []
         for i in flists:
-            if req.lower() in i.lower():
-                directories.append(i.split("|")[0])
+            for j in req[1:]:
+                if j.lower() in i.lower():
+                    if j == req[-1]:
+                        directories.append(i.split("|")[0])
+                else:
+                    break
 
         try:
             #  smallest(length) directory will be the directory required
