@@ -12,7 +12,7 @@ restart ranger
 ## Usage
 * Type `:z dir` to go to `.*/dir` or `:z dir1 dir2 ... dirn` to go to `.*/dir1.*/dir2....*/dirn`
 * Or press c followed by z, followed by `dir` or `dir1 dir2 ... dirn`
-* dir is case insensitive
+* `dir` is case insensitive
 
 ## Updation
 For updating the plugin.
