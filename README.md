@@ -5,7 +5,7 @@ This plugin integrates [Z](https://github.com/rupa/z) with [ranger](https://gith
 ```
 * cd "${XDG_CONFIG_HOME:-$HOME/.config}"/ranger/plugins
 * git clone https://github.com/ask1234560/ranger-zjumper.git
-* echo "map cz console z%space" >> "${XDG_CONFIG_HOME:-$HOME/.config}"/ranger/rc.conf
+* echo "# z jumper\nmap cz console z%space" >> "${XDG_CONFIG_HOME:-$HOME/.config}"/ranger/rc.conf
 * restart ranger
 ```
 
