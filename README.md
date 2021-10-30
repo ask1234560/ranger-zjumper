@@ -1,5 +1,8 @@
 # Ranger & z
-This plugin integrates [Z](https://github.com/rupa/z) with [ranger](https://github.com/ranger/ranger). This plugin can also be used for [Zsh-z](https://github.com/agkozak/zsh-z). The plugin uses `.z` file to jump around, watch [screencast](https://youtu.be/ciHHbFtz4N8).
+This plugin integrates [z](https://github.com/rupa/z) with [ranger](https://github.com/ranger/ranger).The plugin uses `.z` file to jump around, watch [screencast](https://youtu.be/ciHHbFtz4N8).
+
+## Requirement
+* set `_Z_SRC` to path to z.sh
 
 ## Installation
 ```
